@@ -6,7 +6,7 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 */
 
 // creo le variabili per il container e il bottone
-const container = document.querySelector(".container");
+const container = document.querySelector(".my_container");
 const btn = document.querySelector(".btn");
 
 let Y = 10;
