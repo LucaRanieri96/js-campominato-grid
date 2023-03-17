@@ -22,3 +22,22 @@ img {
   font-size: large;
   font-weight: 700;
 }
+
+.my_container{
+  height: calc(100vh - 216px);
+}
+
+.my_row {
+  display: flex;
+  height: calc((100vh - 216px) / 10);
+}
+
+.my_col {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+  border: 1px solid black;
+}

@@ -24,11 +24,15 @@ btn.addEventListener("click", function () {
 
 function createGrid(X) {
   const grid = document.createElement('div');
+  let number = 1;
   // Mi creo tante righe quant'è il valore di X e dentro mi creo altrettante colonne sempre seguendo il valore della X 
   for (let i = 0; i < X; i++) {
-    const row = document.createElement('row');
+    const row = document.createElement('div');
+    row.classList.add("my_row")
     for (let j = 0; j < X; j++) {
-      const col = document.createElement('col');
+      const col = document.createElement('div');
+      col.classList.add("my_col")
+      col.innerText = number++
       // aggiunta della colonna alla riga
       row.appendChild(col);
     }
