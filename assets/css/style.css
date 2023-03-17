@@ -23,12 +23,13 @@ img {
 }
 
 .my_container{
-  height: calc(100vh - 216px);
+  height: calc(70vh - 216px);
 }
 
 .my_row {
   display: flex;
-  height: calc((100vh - 216px) / 10);
+  justify-content: center;
+  height: calc((70vh - 216px) / 10);
 }
 
 .my_col {
@@ -36,7 +37,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: calc((70vh - 216px) / 10);
   height: 100%;
   border: 1px solid black;
 }
