@@ -9,9 +9,34 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 const container = document.querySelector(".my_container");
 const btn = document.querySelector(".btn");
 
+// bonus 1 
+const select = document.querySelector("select");
+// ora dovrei associare a ogni option del select un valore diverso della X
+// ma come si fa?
+// potrei crearmi una funzione che tramite l'opzione del select mi cambia il valore della X
+select.addEventListener("change", function defineX () {
+
+  if (select.value == "1") {
+    let X = 10;
+    console.log(X);
+    return X;
+  } else if (select.value == "2") {
+    let X = 9;
+    console.log(X);
+    return X;
+  } else {
+    let X = 7;
+    console.log(X);
+    return X;
+  }
+
+});
+
+/* 
 let Y = 10;
 // la Y varierà in base alla difficoltà scelta
-let X = Y;
+let X = Y; 
+*/
 
 // aggiungo un event listener al pulsante questo event listener deve far partire una funzione che genererà una lista
 btn.addEventListener("click", function () {
