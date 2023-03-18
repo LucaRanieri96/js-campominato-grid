@@ -23,10 +23,6 @@ img {
   font-weight: 700;
 }
 
-.my_container{
-  height: calc(70vh - 216px);
-}
-
 .my_row {
   display: flex;
   justify-content: center;
