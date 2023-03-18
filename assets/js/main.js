@@ -9,7 +9,7 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 const container = document.querySelector(".my_container");
 const btn = document.querySelector(".btn");
 
-// bonus 1 
+// bonus 1 fatto, solo penso proprio potrei scriverlo meglio, aspetto la correzione di Fabio Lunedì mattina 
 const select = document.querySelector("select");
 // ora dovrei associare a ogni option del select un valore diverso della X
 // ma come si fa?
