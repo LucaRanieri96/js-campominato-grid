@@ -38,8 +38,14 @@ function createGrid(X) {
 
       // aggiungo un event listener per le col 
       col.addEventListener('click', function() {
-        col.style.backgroundColor = 'blue';
-        console.log(`Cella cliccata: ${col.innerText}`);
+        if (col.classList.contains('clicked')) {
+          col.style.backgroundColor = '';
+          col.classList.remove('clicked');
+        } else {
+          col.style.backgroundColor = 'blue';
+          col.classList.add('clicked');
+          console.log(`Cella cliccata: ${col.innerText}`);
+        }
       });
     }
     grid.appendChild(row);
