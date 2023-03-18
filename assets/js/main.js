@@ -29,10 +29,9 @@ select.addEventListener("change", function defineX () {
     console.log(X);
     return X;
   }
-
 });
 
-/* 
+/* questo non mi serve più, in teoria ahah
 let Y = 10;
 // la Y varierà in base alla difficoltà scelta
 let X = Y; 
@@ -41,6 +40,15 @@ let X = Y;
 // aggiungo un event listener al pulsante questo event listener deve far partire una funzione che genererà una lista
 btn.addEventListener("click", function () {
   container.innerHTML = ""; //per svuotare il container
+  // definisco la X anche dentro la funzione che genera la griglia
+  let X = 0;
+  if (select.value == "1") {
+    X = 10;
+  } else if (select.value == "2") {
+    X = 9;
+  } else {
+    X = 7;
+  }
   const grid = createGrid(X); //questa sarà la mia funzione che crea la griglia
   container.appendChild(grid); //per mettere la griglia dentro il container
 });
