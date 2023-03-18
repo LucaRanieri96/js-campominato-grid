@@ -35,6 +35,12 @@ function createGrid(X) {
       col.innerText = number++
       // aggiunta della colonna alla riga
       row.appendChild(col);
+
+      // aggiungo un event listener per le col 
+      col.addEventListener('click', function() {
+        col.style.backgroundColor = 'blue';
+        console.log(`Cella cliccata: ${col.innerText}`);
+      });
     }
     grid.appendChild(row);
   }
